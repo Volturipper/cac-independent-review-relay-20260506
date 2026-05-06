@@ -1,0 +1,31 @@
+{
+  "current_baseline": "v216_archive_repair_plan",
+  "decision": "preserve_assets_only",
+  "generated_at": "2026-05-06T00:00:00Z",
+  "handoff": {
+    "first_file": "decisions/cac-codex-read-this-first.md",
+    "inventory": "manifests/cac-asset-inventory.json",
+    "next_actions": "tasks/cac-next-actions.md",
+    "surface": "manifests/cac-v216-surface.json"
+  },
+  "hard_boundaries": [
+    "do_not_restore_geometry_button_fallback",
+    "do_not_click_microphone_dictation_voice_permissions",
+    "do_not_click_download_open_share_menu_file_buttons_as_submit",
+    "do_not_overwrite_user_draft",
+    "send_risk_commands_must_be_target_aware",
+    "emergency_stop_has_highest_priority",
+    "markers_receipts_hashes_archives_are_not_owner_approval"
+  ],
+  "owner_approval_required_for": [
+    "install",
+    "enable",
+    "real browser auto-dispatch",
+    "artifact auto-download in live workflow",
+    "external supervisor real-run"
+  ],
+  "project": "ChatGPT Auto Continue (CAC)",
+  "release_status": "candidate_static_checked_not_real_browser_released",
+  "schema": "cac.review_decision.v1",
+  "snapshot": "cac-asset-escrow-20260506"
+}

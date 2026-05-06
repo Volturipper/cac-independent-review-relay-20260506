@@ -1,0 +1,106 @@
+{
+  "baseline": "v216_archive_repair_plan",
+  "core_layers": [
+    "auto_continue_core",
+    "safe_submit_guard",
+    "global_scope_controller",
+    "background_wake_scheduler",
+    "artifact_lane",
+    "prompt_preset_library",
+    "diagnostics_panel",
+    "release_gate"
+  ],
+  "external_project_layers": [
+    "control_api",
+    "machine_state_api",
+    "route_plan_contract",
+    "compact_supervisor_contract",
+    "webai_transfer_relay_contract",
+    "nexusync_bridge_and_canonical_binding",
+    "n8n_branch_contracts",
+    "ask_router_contracts",
+    "codex_minimal_cards",
+    "owner_approval_artifact_schema",
+    "command_receipt_and_replay_guard",
+    "archive_index_and_completion_probe",
+    "archive_repair_plan"
+  ],
+  "generated_at": "2026-05-06T00:00:00Z",
+  "known_status_codes": [
+    "READY_TO_CONTINUE",
+    "READY_TO_SEND_PROMPT",
+    "WAIT_GENERATING",
+    "WAIT_PENDING_PROOF",
+    "WAIT_SEND_RETRY",
+    "BLOCKED_EMERGENCY_STOP",
+    "BLOCKED_GLOBAL_SNOOZE",
+    "BLOCKED_GLOBAL_OFF",
+    "BLOCKED_SCOPE",
+    "BLOCKED_DRAFT",
+    "BLOCKED_HIDDEN_PAUSED",
+    "BLOCKED_CONVERSATION_LOCKED",
+    "PAGE_UNREADABLE",
+    "WATCH_NO_SAFE_ACTION",
+    "IDLE_ALLOWED",
+    "COMPLETE_ARCHIVED",
+    "READY_CLOSE_LOOP",
+    "WAIT_ARCHIVE_INDEX",
+    "REPAIR_MISSING_HASHES",
+    "HOLD_INVALID_ARCHIVE_INDEX"
+  ],
+  "not_released": true,
+  "notes": [
+    "v216 is an asset-preserved candidate. Use real-browser tests only after owner approval and isolated profile setup."
+  ],
+  "representative_api_groups": {
+    "approval_receipts": [
+      "ownerApprovalArtifactTemplate",
+      "validateOwnerApprovalArtifact",
+      "ownerApprovalConsumptionStatus",
+      "commandReceipts",
+      "commandReplayStatus",
+      "commandEvidencePair"
+    ],
+    "control": [
+      "status",
+      "aiSummary",
+      "emergencyStop",
+      "resume",
+      "setGlobal",
+      "onlyThisChat",
+      "allowAllChats",
+      "pauseThisChat",
+      "continueNow"
+    ],
+    "nexusync": [
+      "nexusyncBridgePacket",
+      "nexusyncCanonicalPacket",
+      "nexusyncProtocolAdoptionGate",
+      "nexusyncFinalArchiveIndexPacket",
+      "archiveIndexCompletionProbe",
+      "archiveRepairPlan"
+    ],
+    "relay": [
+      "relayEnvelope",
+      "executionChecklistMarker",
+      "relayAckMarker",
+      "finalArchiveIndexAckMarker"
+    ],
+    "supervisor": [
+      "supervisorState",
+      "machineState",
+      "routePlan",
+      "automationGate",
+      "compactContract",
+      "nextCommandEnvelope"
+    ],
+    "validation": [
+      "releaseGate",
+      "schemaValidationPack",
+      "validateSupervisorTemplates",
+      "validateArchiveRepairPlanFixtures"
+    ]
+  },
+  "schema": "cac.v216_surface.v1",
+  "source": "source/chatgpt_auto_continue_v216_archive_repair_plan.txt"
+}
